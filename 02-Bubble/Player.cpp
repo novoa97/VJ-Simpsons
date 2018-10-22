@@ -88,7 +88,7 @@ void Player::init(const glm::ivec2 &tileMapPos, ShaderProgram &shaderProgram)
 
 void Player::update(int deltaTime)
 {
-	spriteStandLeft->update(deltaTime);
+		spriteStandLeft->update(deltaTime);
 	spriteStandRight->update(deltaTime);
 	spriteMoveLeft->update(deltaTime);
 	spriteMoveRight->update(deltaTime);
