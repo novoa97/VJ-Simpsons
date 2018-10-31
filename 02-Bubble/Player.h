@@ -29,10 +29,30 @@ private:
 	Texture spritesheetStandRight;
 	Texture spritesheetMoveLeft;
 	Texture spritesheetMoveRight;
+
+	Texture spritesheetHandHitRight;
+	Texture spritesheetHandHitLeft;
+
+	Texture spritesheetPatadaDerecha;
+	Texture spritesheetPatadaIzquierda;
+
+	Texture spritesheetSaltarDerecha;
+	Texture spritesheetSaltarIzquierda;
+
 	Sprite *spriteStandLeft;
 	Sprite *spriteStandRight;
 	Sprite *spriteMoveLeft;
 	Sprite *spriteMoveRight;
+
+	Sprite *spriteHandHitRight;
+	Sprite *spriteHandHitLeft;
+
+	Sprite *spritePatadaDerecha;
+	Sprite *spritePatadaIzquierda;
+
+	Sprite *spriteSaltarDerecha;
+	Sprite *spriteSaltarIzquierda;
+
 	TileMap *map;
 	int movement = 1;
 };
