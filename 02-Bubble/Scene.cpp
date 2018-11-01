@@ -5,8 +5,8 @@
 #include "Game.h"
 
 
-#define SCREEN_X 32
-#define SCREEN_Y 16
+#define SCREEN_X 10
+#define SCREEN_Y 10
 
 #define INIT_PLAYER_X_TILES 6
 #define INIT_PLAYER_Y_TILES 20
@@ -39,10 +39,10 @@ void Scene::init()
 	
 	// Load textures
 	texs[0].loadFromFile("images/level1.png", TEXTURE_PIXEL_FORMAT_RGBA);
-	/*player = new Player();
+	player = new Player();
 	player->init(glm::ivec2(SCREEN_X, SCREEN_Y), texProgram);
-	player->setPosition(glm::vec2(INIT_PLAYER_X_TILES * map->getTileSize(), INIT_PLAYER_Y_TILES * map->getTileSize()));
-	player->setTileMap(map);*/
+	player->setPosition(glm::vec2(INIT_PLAYER_X_TILES * 30, INIT_PLAYER_Y_TILES * 30));
+	player->setTileMap(map);
 	projection = glm::ortho(0.f, float(SCREEN_WIDTH - 450), float(SCREEN_HEIGHT - 1), 0.f);
 	currentTime = 0.0f;
 }
