@@ -5,7 +5,10 @@
 #include <glm/glm.hpp>
 #include "ShaderProgram.h"
 #include "TileMap.h"
+#include "Quad.h"
+#include "TexturedQuad.h"
 #include "Player.h"
+
 
 
 // Scene contains all the entities of our game.
@@ -27,9 +30,12 @@ private:
 	void initShaders();
 
 private:
+	Quad * quad;
+	Texture texs[2];
+	TexturedQuad *texQuad[3];
 	TileMap *map;
 	Player *player;
-	ShaderProgram texProgram;
+	ShaderProgram simpleProgram, texProgram;
 	float currentTime;
 	glm::mat4 projection;
 
